@@ -159,7 +159,9 @@ public class SortingAlgorithms {
 	}
 
 	public static int[] bubbleSort(int[] numbers) {
-		boolean notSwapped = true;
+        System.out.println("Starting BubbleSort...");
+
+        boolean notSwapped = true;
 
 		do {
 			notSwapped = true;
@@ -173,6 +175,7 @@ public class SortingAlgorithms {
 
 		} while (!notSwapped);
 
+		System.out.println("Ending BubbleSort...");
 		return numbers;
 	}
 
