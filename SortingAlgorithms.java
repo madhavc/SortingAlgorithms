@@ -159,19 +159,19 @@ public class SortingAlgorithms {
 	}
 
 	public static int[] bubbleSort(int[] numbers) {
-		boolean swapped = false;
+		boolean notSwapped = true;
 
 		do {
-			swapped = false;
+			notSwapped = true;
 
 			for (int i = 0; i < (numbers.length - 1); ++i) {
 				if (numbers[i] > numbers[i + 1]) {
 					swap(numbers, i, i + 1);
-					swapped = true;
+					notSwapped = false;
 				}
 			}
 
-		} while (swapped);
+		} while (!notSwapped);
 
 		return numbers;
 	}
